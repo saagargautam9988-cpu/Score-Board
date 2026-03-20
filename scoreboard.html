@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Score Board</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <nav class="foul-scoreboard">
+            <div class="nav-container">
+                <!-- Left Side: Home Fouls -->
+                <div class="foul-lhs">
+                    <span class="label">HOME</span>
+                    <button class="btn" onclick="lhsFoulMinusOne()">-</button>
+                    <div id="home-fouls" class="digit">0</div>
+                    <button class="btn" onclick="lhsFoulOne()">+</button>
+                </div>
+
+                <div>
+                    <button class="restart-btn" onclick="restart()">RESTART</button>
+                </div>
+
+                <div class="foul-rhs">
+                    <button class="btn" onclick="rhsFoulMinusOne()">-</button>
+                    <div id="guest-fouls" class="digit">0</div>
+                    <button class="btn" onclick="rhsFoulOne()">+</button>
+                    <span class="label">GUEST</span>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    </div>
+    <div class="scoreboard">
+        <div id="lhs">
+            <div class="team-name">HOME</div>
+            <div class="lhsteamscore">0</div>
+            <div class="lhsteambutton">
+                <button id="+1" onclick="lhsPlusOne()">+1</button><button id="+2"
+                    onclick="lhsPlusTwo()">+2</button><button id="+3" onclick="lhsPlusThree()">+3</button>
+            </div>
+        </div>
+        <div id="rhs">
+            <div class="team-name">GUEST</div>
+            <div class="rhsteamscore">0</div>
+            <div class="rhsteambutton">
+                <button id="+1" onclick="rhsPlusOne()">+1</button><button id="+2"
+                    onclick="rhsPlusTwo()">+2</button><button id="+3" onclick="rhsPlusThree()">+3</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
